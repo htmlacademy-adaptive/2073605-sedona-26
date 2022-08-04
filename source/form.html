@@ -38,7 +38,104 @@
       <img src="/images/welcome.svg" width="1200" height="518"
         alt="Добро пожаловать в великолепную Седону. Потому что Гранд каньон отстой.">
     </div>
-
+    <section class="form">
+      <div class="form__description">
+        <p class="form__title">Оставьте свой отзыв</p>
+        <p class="form__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+          достопримечательностях</p>
+      </div>
+      <form class="form__name" action="#" method="post">
+        <p class="form__title">Представьтесь:</p>
+        <p class="form__box">
+          <label class="form__name" for="client-name">Имя*:</label>
+          <input class="form__field" type="text" id="client-name" name="client-name" required placeholder="Укажите имя"
+            value="Петр">
+        </p>
+        <p class="form__box">
+          <label class="form__name" for="client-surname">Фамилия*:</label>
+          <input class="form__field" type="text" id="client-surname" name="client-surname" required
+            placeholder="Укажите фамилию" value="Пустота">
+        </p>
+        <p class="form__box">
+          <label class="form__name" for="client-patronymic">Отчество:</label>
+          <input class="form__field" type="text" id="client-patronymic" name="client-patronymic"
+            placeholder="Укажите отчество" value="Викторович">
+        </p>
+        <p class="form__title">Контактная информация:</p>
+        <p class="form__box">
+          <label class="form__name" for="client-phone">Контактный телефон*:</label>
+          <input class="form__field" type="text" id="client-phone" name="client-phone" required
+            placeholder="Введите телефон">
+        </p>
+        <p class="form__box">
+          <label class="form__name" for="client-e-mail">Электронная почта*:</label>
+          <input class="form__field" type="text" id="client-e-mail" name="client-e-mail" required
+            placeholder="Введите e-mail">
+        </p>
+      </form>
+      <p class="form__title">Ваше общее впечатление:</p>
+      <fieldset class="form__group">
+        <ul class="form__list form-list">
+          <li class="form-list__item">
+            <label class="control">
+              <input class="visually-hidden control-input" type="radio" name="impression" value="positive" checked>
+              <span class="control-mark"></span>
+              <span class="control-label">Скорее положительное</span>
+            </label>
+          </li>
+          <li class="form-list__item">
+            <label class="control">
+              <input class="visually-hidden control-input" type="radio" name="impression" value="negative">
+              <span class="control-mark"></span>
+              <span class="control-label">Скорее отрицательное</span>
+            </label>
+          </li>
+          <li class="form-list__item">
+            <label class="control">
+              <input class="visually-hidden control-input" type="radio" name="impression" value="difficult">
+              <span class="control-mark"></span>
+              <span class="control-label">Затрудняюсь ответить</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <p class="form__title">Посещенные достопримечательности:</p>
+      <fieldset class="form__group">
+        <ul class="form__list form-list">
+          <li class="form-list__item">
+            <label class="control">
+              <input class="visually-hidden control-input" type="checkbox" name="bridge" checked>
+              <span class="control-mark"></span>
+              <span class="control-label">Мост Дьявола</span>
+            </label>
+          </li>
+          <li class="form-list__item">
+            <label class="control">
+              <input class="visually-hidden control-input" type="checkbox" name="mount" checked>
+              <span class="control-mark"></span>
+              <span class="control-label">Гора-Колокол</span>
+            </label>
+          </li>
+          <li class="form-list__item">
+            <label class="control">
+              <input class="visually-hidden control-input" type="checkbox" name="park">
+              <span class="control-mark"></span>
+              <span class="control-label">Слайд-парк</span>
+            </label>
+          </li>
+          <li class="form-list__item">
+            <label class="control">
+              <input class="visually-hidden control-input" type="checkbox" name="rocks" checked>
+              <span class="control-mark"></span>
+              <span class="control-label">Красные скалы</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <p class="form__title">Опишите свои эмоции:</p>
+      <fieldset class="form__commit" name="commit" id="commit-field" aria-rowspan="4">Опишите подробно все свои восторги
+      </fieldset>
+    </section>
   </main>
   <footer class="contacts">
     <h2 class="contacts__title">#visitsedona</h2>
@@ -83,6 +180,16 @@
       </svg>
     </a>
   </footer>
+  <div class="modal-container modal-container-close">
+    <p class="modal-container__title">Что-то пошло не так!</p>
+    <p class="modal-container__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="button">Ок</button>
+  </div>
+  <div class="modal-container modal-container-close">
+    <p class="modal-container__title">Ваш отзыв отправлен!</p>
+    <p class="modal-container__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+    <button class="button">Закрыть окно</button>
+  </div>
 </body>
 
 </html>
