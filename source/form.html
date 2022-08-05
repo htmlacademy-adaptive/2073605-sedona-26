@@ -8,9 +8,9 @@
 
 <body>
   <header class="main-header">
-    <a class="main-header__logo">
+    <a class="main-header__logo logo">
       <h1 class="visually-hidden">Сайт Седоны.</h1>
-      <img src="/images/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны.">
+      <img class="logo__image" src="../images/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны.">
     </a>
     <nav class="main-navigation">
       <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
@@ -35,46 +35,48 @@
   <main>
     <div class="main-image">
       <h2 class="visually-hidden">Sedona.</h2>
-      <img src="/images/welcome.svg" width="1200" height="518"
+      <img class="main-image__image" src="../images/welcome.svg" width="1200" height="518"
         alt="Добро пожаловать в великолепную Седону. Потому что Гранд каньон отстой.">
     </div>
     <section class="form">
-      <div class="form__description">
-        <p class="form__title">Оставьте свой отзыв</p>
-        <p class="form__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+      <div class="form__description summary">
+        <p class="summary__title">Оставьте свой отзыв</p>
+        <p class="summary__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
           достопримечательностях</p>
       </div>
-      <form class="form__name" action="#" method="post">
+      <form class="form__name name-client" action="#" method="post">
         <p class="form__title">Представьтесь:</p>
-        <p class="form__box">
-          <label class="form__name" for="client-name">Имя*:</label>
-          <input class="form__field" type="text" id="client-name" name="client-name" required placeholder="Укажите имя"
-            value="Петр">
+        <p class="name-client__box">
+          <label class="name-client__name" for="client-name">Имя*:</label>
+          <input class="name-client__field" type="text" id="client-name" name="client-name" required
+            placeholder="Укажите имя" value="Петр">
         </p>
-        <p class="form__box">
-          <label class="form__name" for="client-surname">Фамилия*:</label>
-          <input class="form__field" type="text" id="client-surname" name="client-surname" required
+        <p class="name-client__box">
+          <label class="name-client__name" for="client-surname">Фамилия*:</label>
+          <input class="name-client__field" type="text" id="client-surname" name="client-surname" required
             placeholder="Укажите фамилию" value="Пустота">
         </p>
-        <p class="form__box">
-          <label class="form__name" for="client-patronymic">Отчество:</label>
-          <input class="form__field" type="text" id="client-patronymic" name="client-patronymic"
+        <p class="name-client__box">
+          <label class="name-client__name" for="client-patronymic">Отчество:</label>
+          <input class="name-client__field" type="text" id="client-patronymic" name="client-patronymic"
             placeholder="Укажите отчество" value="Викторович">
         </p>
+      </form>
+      <form class="form__contacts contacts-client" action="#" method="post">
         <p class="form__title">Контактная информация:</p>
-        <p class="form__box">
-          <label class="form__name" for="client-phone">Контактный телефон*:</label>
-          <input class="form__field" type="text" id="client-phone" name="client-phone" required
+        <p class="contacts-client__box">
+          <label class="contacts-client__name" for="client-phone">Контактный телефон*:</label>
+          <input class="contacts-client__field" type="tel" id="client-phone" name="client-phone" required
             placeholder="Введите телефон">
         </p>
-        <p class="form__box">
-          <label class="form__name" for="client-e-mail">Электронная почта*:</label>
-          <input class="form__field" type="text" id="client-e-mail" name="client-e-mail" required
+        <p class="contacts-client__box">
+          <label class="contacts-client__name" for="client-e-mail">Электронная почта*:</label>
+          <input class="contacts-client__field" type="email" id="client-e-mail" name="client-e-mail" required
             placeholder="Введите e-mail">
         </p>
       </form>
-      <p class="form__title">Ваше общее впечатление:</p>
       <fieldset class="form__group">
+        <legend class="form__title">Ваше общее впечатление:</legend>
         <ul class="form__list form-list">
           <li class="form-list__item">
             <label class="control">
@@ -99,8 +101,8 @@
           </li>
         </ul>
       </fieldset>
-      <p class="form__title">Посещенные достопримечательности:</p>
       <fieldset class="form__group">
+        <legend class="form__title">Посещенные достопримечательности:</legend>
         <ul class="form__list form-list">
           <li class="form-list__item">
             <label class="control">
@@ -118,14 +120,14 @@
           </li>
           <li class="form-list__item">
             <label class="control">
-              <input class="visually-hidden control-input" type="checkbox" name="park">
+              <input class="visually-hidden control-input" type="checkbox" name="park" checked>
               <span class="control-mark"></span>
               <span class="control-label">Слайд-парк</span>
             </label>
           </li>
           <li class="form-list__item">
             <label class="control">
-              <input class="visually-hidden control-input" type="checkbox" name="rocks" checked>
+              <input class="visually-hidden control-input" type="checkbox" name="rocks">
               <span class="control-mark"></span>
               <span class="control-label">Красные скалы</span>
             </label>
@@ -133,12 +135,15 @@
         </ul>
       </fieldset>
       <p class="form__title">Опишите свои эмоции:</p>
-      <textarea class="form__commit" name="commit" id="commit-field" rows="4">Опишите подробно все свои восторги</textarea>
+      <textarea class="form__commit" name="commit" id="commit-field"
+        rows="4">Опишите подробно все свои восторги</textarea>
+      <button class="button">Отправь отзыв</button>
+      <span class="">* — обязательные поля</span>
     </section>
   </main>
-  <footer class="contacts">
-    <h2 class="contacts__title">#visitsedona</h2>
-    <ul class="contacts__list socials-list">
+  <footer class="main-footer">
+    <h2 class="main-footer__title">#visitsedona</h2>
+    <ul class="main-footer__list socials-list">
       <li class="socials-list__item">
         <a class="button-social" href="https://vk.com/htmlacademy">
           <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -170,8 +175,8 @@
         </a>
       </li>
     </ul>
-    <a class="contacts__designer">
-      <span class="desinger">Разработано</span>
+    <a class="main-footer__designer desinger">
+      <span class="desinger__text">Разработано</span>
       <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"
@@ -179,14 +184,15 @@
       </svg>
     </a>
   </footer>
-  <div class="modal-container modal-container-close">
+  <div class="modal-container modal-container--error">
     <p class="modal-container__title">Что-то пошло не так!</p>
     <p class="modal-container__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
     <button class="button">Ок</button>
   </div>
-  <div class="modal-container modal-container-close">
+  <div class="modal-container modal-container--success">
     <p class="modal-container__title">Ваш отзыв отправлен!</p>
-    <p class="modal-container__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+    <p class="modal-container__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
+      опубликуем его на сайте.</p>
     <button class="button">Закрыть окно</button>
   </div>
 </body>
