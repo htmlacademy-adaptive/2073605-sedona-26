@@ -10,7 +10,7 @@
   <header class="main-header">
     <a class="main-header__logo logo">
       <h1 class="visually-hidden">Сайт Седоны.</h1>
-      <img class="logo__image" src="../images/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны.">
+      <img class="logo__image" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны.">
     </a>
     <nav class="main-navigation">
       <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
@@ -35,7 +35,7 @@
   <main>
     <div class="main-image">
       <h2 class="visually-hidden">Sedona.</h2>
-      <img class="main-image__image" src="../images/welcome.svg" width="1200" height="518"
+      <img class="main-image__image" src="img/welcome.svg" width="1200" height="518"
         alt="Добро пожаловать в великолепную Седону. Потому что Гранд каньон отстой.">
     </div>
     <section class="form">
@@ -44,101 +44,99 @@
         <p class="summary__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
           достопримечательностях</p>
       </div>
-      <form class="form__name name-client" action="#" method="post">
+      <form class="form__name client" action="#" method="post">
         <p class="form__title">Представьтесь:</p>
-        <p class="name-client__box">
-          <label class="name-client__name" for="client-name">Имя*:</label>
-          <input class="name-client__field" type="text" id="client-name" name="client-name" required
+        <p class="client__box">
+          <label class="client__name" for="client-name">Имя*:</label>
+          <input class="client__field" type="text" id="client-name" name="client-name" required
             placeholder="Укажите имя" value="Петр">
         </p>
-        <p class="name-client__box">
-          <label class="name-client__name" for="client-surname">Фамилия*:</label>
-          <input class="name-client__field" type="text" id="client-surname" name="client-surname" required
+        <p class="client__box">
+          <label class="client__name" for="client-surname">Фамилия*:</label>
+          <input class="client__field" type="text" id="client-surname" name="client-surname" required
             placeholder="Укажите фамилию" value="Пустота">
         </p>
-        <p class="name-client__box">
-          <label class="name-client__name" for="client-patronymic">Отчество:</label>
-          <input class="name-client__field" type="text" id="client-patronymic" name="client-patronymic"
+        <p class="client__box">
+          <label class="client__name" for="client-patronymic">Отчество:</label>
+          <input class="client__field" type="text" id="client-patronymic" name="client-patronymic"
             placeholder="Укажите отчество" value="Викторович">
         </p>
-      </form>
-      <form class="form__contacts contacts-client" action="#" method="post">
         <p class="form__title">Контактная информация:</p>
-        <p class="contacts-client__box">
-          <label class="contacts-client__name" for="client-phone">Контактный телефон*:</label>
-          <input class="contacts-client__field" type="tel" id="client-phone" name="client-phone" required
+        <p class="client__contacts">
+          <label class="client__name" for="client-phone">Контактный телефон*:</label>
+          <input class="client__connection" type="tel" id="client-phone" name="client-phone" required
             placeholder="Введите телефон">
         </p>
-        <p class="contacts-client__box">
-          <label class="contacts-client__name" for="client-e-mail">Электронная почта*:</label>
-          <input class="contacts-client__field" type="email" id="client-e-mail" name="client-e-mail" required
+        <p class="client__contacts">
+          <label class="client__name" for="client-e-mail">Электронная почта*:</label>
+          <input class="client__connection" type="email" id="client-e-mail" name="client-e-mail" required
             placeholder="Введите e-mail">
         </p>
+        <fieldset class="form__group">
+          <legend class="form__title">Ваше общее впечатление:</legend>
+          <ul class="form__list form-list">
+            <li class="form-list__item">
+              <label class="control">
+                <input class="visually-hidden control-input" type="radio" name="impression" value="positive" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Скорее положительное</span>
+              </label>
+            </li>
+            <li class="form-list__item">
+              <label class="control">
+                <input class="visually-hidden control-input" type="radio" name="impression" value="negative">
+                <span class="control-mark"></span>
+                <span class="control-label">Скорее отрицательное</span>
+              </label>
+            </li>
+            <li class="form-list__item">
+              <label class="control">
+                <input class="visually-hidden control-input" type="radio" name="impression" value="difficult">
+                <span class="control-mark"></span>
+                <span class="control-label">Затрудняюсь ответить</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__group">
+          <legend class="form__title">Посещенные достопримечательности:</legend>
+          <ul class="form__list form-list">
+            <li class="form-list__item">
+              <label class="control">
+                <input class="visually-hidden control-input" type="checkbox" name="bridge" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Мост Дьявола</span>
+              </label>
+            </li>
+            <li class="form-list__item">
+              <label class="control">
+                <input class="visually-hidden control-input" type="checkbox" name="mount" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Гора-Колокол</span>
+              </label>
+            </li>
+            <li class="form-list__item">
+              <label class="control">
+                <input class="visually-hidden control-input" type="checkbox" name="park" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Слайд-парк</span>
+              </label>
+            </li>
+            <li class="form-list__item">
+              <label class="control">
+                <input class="visually-hidden control-input" type="checkbox" name="rocks">
+                <span class="control-mark"></span>
+                <span class="control-label">Красные скалы</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <p class="form__title">Опишите свои эмоции:</p>
+        <textarea class="form__commit" name="commit" id="commit-field"
+          rows="4">Опишите подробно все свои восторги</textarea>
+        <button class="button" type="submit">Отправь отзыв</button>
+        <span class="">* — обязательные поля</span>
       </form>
-      <fieldset class="form__group">
-        <legend class="form__title">Ваше общее впечатление:</legend>
-        <ul class="form__list form-list">
-          <li class="form-list__item">
-            <label class="control">
-              <input class="visually-hidden control-input" type="radio" name="impression" value="positive" checked>
-              <span class="control-mark"></span>
-              <span class="control-label">Скорее положительное</span>
-            </label>
-          </li>
-          <li class="form-list__item">
-            <label class="control">
-              <input class="visually-hidden control-input" type="radio" name="impression" value="negative">
-              <span class="control-mark"></span>
-              <span class="control-label">Скорее отрицательное</span>
-            </label>
-          </li>
-          <li class="form-list__item">
-            <label class="control">
-              <input class="visually-hidden control-input" type="radio" name="impression" value="difficult">
-              <span class="control-mark"></span>
-              <span class="control-label">Затрудняюсь ответить</span>
-            </label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="form__group">
-        <legend class="form__title">Посещенные достопримечательности:</legend>
-        <ul class="form__list form-list">
-          <li class="form-list__item">
-            <label class="control">
-              <input class="visually-hidden control-input" type="checkbox" name="bridge" checked>
-              <span class="control-mark"></span>
-              <span class="control-label">Мост Дьявола</span>
-            </label>
-          </li>
-          <li class="form-list__item">
-            <label class="control">
-              <input class="visually-hidden control-input" type="checkbox" name="mount" checked>
-              <span class="control-mark"></span>
-              <span class="control-label">Гора-Колокол</span>
-            </label>
-          </li>
-          <li class="form-list__item">
-            <label class="control">
-              <input class="visually-hidden control-input" type="checkbox" name="park" checked>
-              <span class="control-mark"></span>
-              <span class="control-label">Слайд-парк</span>
-            </label>
-          </li>
-          <li class="form-list__item">
-            <label class="control">
-              <input class="visually-hidden control-input" type="checkbox" name="rocks">
-              <span class="control-mark"></span>
-              <span class="control-label">Красные скалы</span>
-            </label>
-          </li>
-        </ul>
-      </fieldset>
-      <p class="form__title">Опишите свои эмоции:</p>
-      <textarea class="form__commit" name="commit" id="commit-field"
-        rows="4">Опишите подробно все свои восторги</textarea>
-      <button class="button">Отправь отзыв</button>
-      <span class="">* — обязательные поля</span>
     </section>
   </main>
   <footer class="main-footer">
