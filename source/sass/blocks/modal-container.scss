@@ -1,4 +1,4 @@
-.form__title {
+.modal-container__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -7,28 +7,16 @@
   color: #000000;
 }
 
-.form__commit {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  background-color: #f2f2f2;
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.form__footnote {
-  font-size: 12px;
-  line-height: 21px;
-  text-align: center;
+.modal-container__text {
   text-transform: uppercase;
-  color: rgba(51, 51, 51, 0.6);
 }
 
-.form__button {
+.modal-container__button {
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #81b3d2;
   border: none;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
 }
