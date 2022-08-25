@@ -11,3 +11,17 @@
   text-transform: uppercase;
   color: #000000;
 }
+
+@media (min-width: 768px) {
+  .main-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1280px) {
+  .main-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -16,3 +16,37 @@
   margin: 0;
   text-transform: uppercase;
 }
+
+@media (min-width: 768px) {
+  .reality {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .reality__item {
+    padding: 158px 36px 58px;
+  }
+
+  .reality__title,
+  .reality__text {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1280px) {
+  .reality {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .reality__item {
+    padding: 159px 58px 79px;
+  }
+
+  .reality__title,
+  .reality__text {
+    text-align: center;
+  }
+}

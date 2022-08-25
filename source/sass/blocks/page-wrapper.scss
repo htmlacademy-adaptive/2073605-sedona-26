@@ -12,3 +12,15 @@
   line-height: 21px;
   color: #333333;
 }
+
+@media (min-width: 768px) {
+  .page-wrapper {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .page-wrapper {
+    width: 1280px;
+  }
+}

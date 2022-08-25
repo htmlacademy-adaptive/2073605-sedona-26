@@ -1,4 +1,3 @@
-
 .navigation__list {
   margin: 0;
   padding: 0;
@@ -17,4 +16,24 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .navigation__toggle {
+    display: none;
+  }
+
+  .navigation__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .navigation__item {
+    padding: 17px 24px;
+    background-color: #ffffff;
+  }
+
+  .navigation__link {
+    color: #000000;
+  }
 }

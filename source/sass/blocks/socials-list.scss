@@ -5,3 +5,27 @@
 .socials-list__item {
   background-color: #81b3d2;
 }
+
+@media (min-width: 768px) {
+  .socials-list {
+    display: flex;
+  }
+
+  .socials-list__item {
+    margin: 6px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .socials-list {
+    display: flex;
+  }
+
+  .socials-list__item {
+    margin: 6px;
+    width: 48px;
+    height: 48px;
+  }
+}

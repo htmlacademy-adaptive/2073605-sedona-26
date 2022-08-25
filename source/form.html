@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -48,33 +49,37 @@
             достопримечательностях</p>
         </div>
         <form class="form__name client" action="#" method="post">
-          <p class="form__title">Представьтесь:</p>
-          <p class="client__box">
-            <label class="client__name" for="client-name">Имя*:</label>
-            <input class="client__field" type="text" id="client-name" name="client-name" required
-              placeholder="Укажите имя" value="Петр">
-          </p>
-          <p class="client__box">
-            <label class="client__name" for="client-surname">Фамилия*:</label>
-            <input class="client__field" type="text" id="client-surname" name="client-surname" required
-              placeholder="Укажите фамилию" value="Пустота">
-          </p>
-          <p class="client__box">
-            <label class="client__name" for="client-patronymic">Отчество:</label>
-            <input class="client__field" type="text" id="client-patronymic" name="client-patronymic"
-              placeholder="Укажите отчество" value="Викторович">
-          </p>
-          <p class="form__title">Контактная информация:</p>
-          <p class="client__contacts">
-            <label class="client__name" for="client-phone">Контактный телефон*:</label>
-            <input class="client__connection" type="tel" id="client-phone" name="client-phone" required
-              placeholder="Введите телефон">
-          </p>
-          <p class="client__contacts">
-            <label class="client__name" for="client-e-mail">Электронная почта*:</label>
-            <input class="client__connection" type="email" id="client-e-mail" name="client-e-mail" required
-              placeholder="Введите e-mail">
-          </p>
+          <div class="form__wrapper">
+            <p class="form__title">Представьтесь:</p>
+            <p class="client__box">
+              <label class="client__name" for="client-name">Имя*:</label>
+              <input class="client__field" type="text" id="client-name" name="client-name" required
+                placeholder="Укажите имя" value="Петр">
+            </p>
+            <p class="client__box">
+              <label class="client__name" for="client-surname">Фамилия*:</label>
+              <input class="client__field" type="text" id="client-surname" name="client-surname" required
+                placeholder="Укажите фамилию" value="Пустота">
+            </p>
+            <p class="client__box">
+              <label class="client__name" for="client-patronymic">Отчество:</label>
+              <input class="client__field" type="text" id="client-patronymic" name="client-patronymic"
+                placeholder="Укажите отчество" value="Викторович">
+            </p>
+          </div>
+          <div class="form__wrapper">
+            <p class="form__title">Контактная информация:</p>
+            <p class="client__contacts">
+              <label class="client__name" for="client-phone">Контактный телефон*:</label>
+              <input class="client__connection" type="tel" id="client-phone" name="client-phone" required
+                placeholder="Введите телефон">
+            </p>
+            <p class="client__contacts">
+              <label class="client__name" for="client-e-mail">Электронная почта*:</label>
+              <input class="client__connection" type="email" id="client-e-mail" name="client-e-mail" required
+                placeholder="Введите e-mail">
+            </p>
+          </div>
           <fieldset class="form__group">
             <legend class="form__title">Ваше общее впечатление:</legend>
             <ul class="form__list form-list">
@@ -134,11 +139,13 @@
               </li>
             </ul>
           </fieldset>
-          <p class="form__title">Опишите свои эмоции:</p>
-          <textarea class="form__commit" name="commit" id="commit-field"
-            rows="4">Опишите подробно все свои восторги</textarea>
-          <button class="form__button" type="submit">Отправь отзыв</button>
-          <span class="form__footnote">* — обязательные поля</span>
+          <div class="form__container">
+            <p class="form__title">Опишите свои эмоции:</p>
+            <textarea class="form__commit" name="commit" id="commit-field"
+              rows="4">Опишите подробно все свои восторги</textarea>
+            <button class="form__button" type="submit">Отправь отзыв</button>
+            <span class="form__footnote">* — обязательные поля</span>
+          </div>
         </form>
       </section>
     </main>

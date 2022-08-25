@@ -1,3 +1,8 @@
+.modal-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .modal-container__title {
   font-weight: 700;
   font-size: 18px;
@@ -8,6 +13,7 @@
 }
 
 .modal-container__text {
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -19,4 +25,14 @@
   border: none;
   font-size: 18px;
   line-height: 26px;
+}
+
+@media (min-width: 768px) {
+  .modal-container--error .modal-container__button {
+    width: 272px;
+  }
+
+  .modal-container--success .modal-container__button {
+    width: 458px;
+  }
 }
