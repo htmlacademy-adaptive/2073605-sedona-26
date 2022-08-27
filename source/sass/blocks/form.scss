@@ -44,11 +44,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0 60px;
   }
 
   .form__wrapper {
-    display: flex;
-    flex-direction: column;
     width: 324px;
   }
 
@@ -89,16 +88,15 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   .form__name {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0 120px;
   }
 
   .form__wrapper {
-    display: flex;
-    flex-direction: column;
     width: 480px;
   }
 

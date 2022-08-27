@@ -1,19 +1,4 @@
-.main-header {
-  margin: 0 auto;
-}
-
 @media (min-width: 768px) {
-  .main-header {
-    position: relative;
-  }
-
-  .main-header__logo {
-    position: absolute;
-    left: 39%;
-  }
-}
-
-@media (min-width: 1280px) {
   .main-header {
     position: relative;
   }

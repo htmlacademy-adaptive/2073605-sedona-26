@@ -12,7 +12,7 @@
 
 @media (min-width: 768px) {
   .photo:nth-child(1) {
-    width: 648px;
+    width: 100%;
   }
 
   .photo {
@@ -25,9 +25,9 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   .photo:nth-child(1) {
-    width: 1200px;
+    width: 100%;
   }
 
   .photo {
