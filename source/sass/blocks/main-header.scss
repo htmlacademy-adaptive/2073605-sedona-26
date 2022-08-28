@@ -1,10 +1,20 @@
-@media (min-width: 768px) {
-  .main-header {
-    position: relative;
-  }
+.main-header {
+  position: relative;
+}
 
+.main-header__logo {
+  position: absolute;
+  left: 20%;
+}
+
+@media (min-width: 768px) {
   .main-header__logo {
-    position: absolute;
     left: 39%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-header__logo {
+    left: 42%;
   }
 }
