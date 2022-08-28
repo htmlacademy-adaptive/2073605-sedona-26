@@ -17,3 +17,27 @@
   background-color: #f2f2f2;
   color: rgba(0, 0, 0, 0.3);
 }
+
+.client__box,
+.client__contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .client__box,
+  .client__contacts {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .client__box,
+  .client__contacts {
+    display: flex;
+    flex-direction: column;
+    width: 430px;
+  }
+}

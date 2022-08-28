@@ -1,4 +1,25 @@
 .main-image-site {
   background-image: url("../img/sedona-main-mobile.jpg");
   padding: 85px 19px;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-position: center;
+}
+
+@media (min-width: 768px) {
+  .main-image-site {
+    background-image: url("../img/sedona-main-tablet.jpg");
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-image-site {
+    background-image: url("../img/sedona-main-desktop.jpg");
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center;
+  }
 }
