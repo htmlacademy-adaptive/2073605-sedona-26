@@ -3,19 +3,49 @@
 }
 
 .client__field {
+  font-family: "PT Sans", sans-serif;
+  padding: 16px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   background-color: #f2f2f2;
   color: #000000;
+  border: none;
 }
 
 .client__connection {
+  padding: 16px 68px 16px 16px;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   background-color: #f2f2f2;
   color: rgba(0, 0, 0, 0.3);
+  border: none;
+}
+
+.client__contacts {
+  position: relative;
+}
+
+.client__button {
+  position: absolute;
+  top: 21px;
+  right: 0;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+
+.client__contacts:nth-child(2) .client__button {
+  background-image: url("../img/phone.svg");
+}
+
+.client__contacts:nth-child(3) .client__button {
+  background-image: url("../img/mail.svg");
 }
 
 .client__box,
@@ -30,6 +60,7 @@
     display: flex;
     flex-direction: column;
     width: 280px;
+    box-sizing: border-box;
   }
 }
 
