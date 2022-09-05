@@ -16,8 +16,11 @@
         <img class="logo__image" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны.">
       </a>
       <nav class="navigation navigation--closed navigation--nojs">
-        <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть
-            меню.</span></button>
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню.</span><svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2" />
+          </svg>
+        </button>
         <div class="navigation__wrapper">
           <ul class="navigation__list">
             <li class="navigation__item">
@@ -73,17 +76,11 @@
               <label class="client__name" for="client-phone">Контактный телефон*:</label>
               <input class="client__connection" type="tel" id="client-phone" name="client-phone" required
                 placeholder="Введите телефон">
-              <button class="client__button" type="button">
-                <span class="visually-hidden">Телефон.</span>
-              </button>
             </p>
             <p class="client__contacts">
               <label class="client__name" for="client-e-mail">Электронная почта*:</label>
               <input class="client__connection" type="email" id="client-e-mail" name="client-e-mail" required
                 placeholder="Введите e-mail">
-              <button class="client__button" type="button">
-                <span class="visually-hidden">Почта.</span>
-              </button>
             </p>
           </div>
           <fieldset class="form__group">
@@ -214,6 +211,7 @@
       </div>
     </div>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

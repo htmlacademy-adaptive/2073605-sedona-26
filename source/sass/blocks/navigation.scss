@@ -6,7 +6,7 @@
 .navigation__toggle {
   position: absolute;
   right: 0;
-  padding: 17px 20px;
+  padding: 15px 20px;
   background-color: #ffffff;
   border: none;
   cursor: pointer;
@@ -67,6 +67,15 @@
 
   .navigation--opened .navigation__toggle::after {
     transform: rotate(-45deg);
+  }
+
+  .navigation--nojs .navigation__toggle {
+    display: none;
+  }
+
+  .navigation--nojs .navigation__list {
+    position: static;
+    margin-top: 95px;
   }
 }
 
