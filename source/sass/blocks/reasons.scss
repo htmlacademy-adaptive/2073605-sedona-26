@@ -1,4 +1,5 @@
 .reasons__list {
+  margin: 0;
   padding: 0;
   background-color: #eeeeee;
   list-style-type: none;
@@ -30,8 +31,47 @@
   color: #ffffff;
 }
 
+.reasons__item:nth-child(1) .reasons__wrapper {
+  position: relative;
+  padding: 54px 16px 34px;
+}
+
+.reasons__item:nth-child(2) .reasons__wrapper {
+  position: relative;
+  padding: 39px 16px 35px;
+}
+
+.reasons__item:nth-child(1) .reasons__wrapper::before {
+  content: "";
+  background-image: url("../img/reasons-element.svg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 37px;
+}
+
 .reasons__title--other {
   color: #ffffff;
+}
+
+.reasons__item:nth-child(n+3) {
+  padding: 25px 32px;
+  box-sizing: border-box;
+}
+
+.reasons__item {
+  position: relative;
+}
+
+.reasons__item:nth-child(n+4)::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 18px;
+  width: 284px;
+  height: 1px;
+  background-color: #d6d6d6;
 }
 
 @media (min-width: 768px) {
@@ -41,13 +81,34 @@
   }
 
   .reasons__wrapper {
-    padding: 42px 47px;
     width: 256px;
     box-sizing: border-box;
   }
 
+  .reasons__item:nth-child(2) .reasons__wrapper {
+    padding: 43px 36px 40px;
+    order: 1;
+  }
+
+  .reasons__item:nth-child(1) .reasons__wrapper {
+    padding: 40px 26px 43px;
+  }
+
+  .reasons__item:nth-child(2) .reasons__image {
+    order: 0;
+  }
+
+  .reasons__wrapper::before {
+    display: none;
+  }
+
   .reasons__image {
     width: 512px;
+  }
+
+  .reasons__title {
+    font-size: 21px;
+    line-height: 26px;
   }
 
   .reasons__item--other {
@@ -57,6 +118,19 @@
 
   .reasons__item:nth-child(n+3) {
     width: 256px;
+    padding-top: 41px;
+    padding-bottom: 41px;
+    padding-left: 33px;
+    padding-right: 33px;
+  }
+
+  .reasons__item:nth-child(n+4) {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+
+  .reasons__item:nth-child(n+4)::before {
+    display: none;
   }
 }
 
@@ -67,7 +141,7 @@
   }
 
   .reasons__wrapper {
-    padding: 42px 42px 62px;
+    padding: 47px 52px 56px;
     width: 400px;
     box-sizing: border-box;
   }
@@ -83,5 +157,10 @@
 
   .reasons__item:nth-child(n+3) {
     width: 400px;
+  }
+
+  .reasons__item:nth-child(n+4) {
+    padding-left: 62px;
+    padding-right: 62px;
   }
 }

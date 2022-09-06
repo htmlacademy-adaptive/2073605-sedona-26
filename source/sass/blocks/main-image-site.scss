@@ -1,9 +1,20 @@
 .main-image-site {
+  position: relative;
   background-image: url("../img/sedona-main-mobile.jpg");
   padding: 85px 19px;
   background-repeat: no-repeat;
   text-align: center;
   background-position: center;
+}
+
+.main-image-site::before {
+  content: "";
+  background-image: url("../img/main-image-element-mobile.svg");
+  position: absolute;
+  bottom: 0;
+  left: -1px;
+  width: 322px;
+  height: 57px;
 }
 
 @media (min-width: 768px) {
@@ -13,6 +24,15 @@
     text-align: center;
     background-position: center;
   }
+
+  .main-image-site::before {
+    content: "";
+    background-image: url("../img/main-image-element-tablet.svg");
+    position: absolute;
+    bottom: -1px;
+    width: 769px;
+    height: 57px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -21,5 +41,14 @@
     background-repeat: no-repeat;
     text-align: center;
     background-position: center;
+  }
+
+  .main-image-site::before {
+    content: "";
+    background-image: url("../img/main-image-element-desktop.svg");
+    position: absolute;
+    bottom: -1px;
+    width: 1201px;
+    height: 57px;
   }
 }

@@ -1,10 +1,12 @@
 .form__group {
   margin: 0;
-  padding: 0;
+  padding: 16px 20px;
   border: none;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .form__title {
+  margin: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -13,23 +15,50 @@
   color: #000000;
 }
 
+.form__group .form__title {
+  padding-top: 16px;
+}
+
+.form__list {
+  margin: 0;
+  list-style-type: none;
+}
+
+.form__wrapper {
+  padding: 24px 20px 39px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.form__wrapper:nth-child(2) {
+  border-bottom: 1px solid #e5e5e5;
+}
+
 .form__commit {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 16px;
+  width: 279px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   background-color: #f2f2f2;
   color: rgba(0, 0, 0, 0.3);
+  border: none;
+  box-sizing: border-box;
 }
 
 .form__footnote {
   font-size: 12px;
   line-height: 21px;
-  text-align: center;
+  text-align: end;
   text-transform: uppercase;
   color: rgba(51, 51, 51, 0.6);
 }
 
 .form__button {
+  padding-top: 18px;
+  padding-bottom: 14px;
+  width: 281px;
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
@@ -37,6 +66,10 @@
   border: none;
   font-size: 21px;
   line-height: 26px;
+}
+
+.form__container {
+  padding: 16px 19px 0;
 }
 
 @media (min-width: 768px) {
@@ -48,22 +81,32 @@
   }
 
   .form__wrapper {
-    width: 324px;
+    padding: 0;
+    width: 280px;
+    border: none;
+  }
+
+  .form__wrapper:nth-child(1) {
+    padding-right: 43px;
+    padding-bottom: 63px;
+    border-right: 1px solid #dbdbdb;
+  }
+
+  .form__wrapper:nth-child(2) {
+    padding-left: 26px;
+    border: none;
   }
 
   .form__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    width: 648px;
-  }
-
-  .form-list__item {
-    width: 224px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
   }
 
   .form__group {
     width: 648px;
+    border: none;
+    border-top: 1px solid #dbdbdb;
   }
 
   .form__container {
@@ -76,6 +119,10 @@
 
   .form__title {
     margin: 0 auto;
+    margin-bottom: 28px;
+    width: 402px;
+    font-size: 21px;
+    line-height: 26px;
   }
 
   .form__commit {
@@ -85,6 +132,11 @@
 
   .form__button {
     width: 324px;
+  }
+
+  .form__footnote {
+    font-size: 14px;
+    line-height: 21px;
   }
 }
 
@@ -96,11 +148,16 @@
     padding: 0 120px;
   }
 
-  .form__wrapper {
-    width: 480px;
+  .form__wrapper:nth-child(1) {
+    width: 430px;
   }
 
-  .form__list {
+  .form__wrapper:nth-child(2) {
+    width: 402px;
+  }
+
+  .form__list:nth-child(1),
+  .form__list:nth-child(2) {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;

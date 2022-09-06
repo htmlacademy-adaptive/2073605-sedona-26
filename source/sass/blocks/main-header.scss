@@ -5,11 +5,13 @@
 .main-header__logo {
   position: absolute;
   left: 20%;
+  z-index: 2;
 }
 
 @media (min-width: 768px) {
   .main-header__logo {
     left: 39%;
+    z-index: 3;
   }
 }
 

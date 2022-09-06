@@ -15,9 +15,13 @@
         <h1 class="visually-hidden">Сайт Седоны.</h1>
         <img class="logo__image" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны.">
       </a>
-      <nav class="navigation">
-        <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть
-            меню.</span></button>
+      <nav class="navigation navigation--closed navigation--nojs">
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+          <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2" />
+          </svg>
+        </button>
         <div class="navigation__wrapper">
           <ul class="navigation__list">
             <li class="navigation__item">
@@ -45,7 +49,7 @@
       <section class="reasons">
         <div class="reasons__content summary">
           <p class="summary__title">
-            Седона — небольшой городок в Аризоне, заслуживающий большего!
+            Седона — небольшой городок в Аризоне,<br> заслуживающий большего!
           </p>
           <p class="summary__description">
             Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
@@ -106,7 +110,7 @@
       </section>
       <div class="search-hotel">
         <p class="search-hotel__title">Заинтересовались?</p>
-        <p class="search-hotel__description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие
+        <p class="search-hotel__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие
           предложения
           гостиниц в седоне</p>
         <a class="search-hotel__button search-hotel__button--search" href="#">Найти Гостиницу</a>
@@ -159,6 +163,7 @@
       </a>
     </footer>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

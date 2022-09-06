@@ -12,18 +12,33 @@
 }
 
 .video__description {
+  margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
   .video {
-    padding: 0 60px;
+    padding: 57px 60px 40px;
+  }
+
+  .video__title {
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .video__description {
+    width: 445px;
+    margin-bottom: 65px;
   }
 }
 
 @media (min-width: 1200px) {
   .video {
-    padding: 0 200px;
+    padding: 66px 200px 120px;
+  }
+
+  .video__description {
+    margin-bottom: 68px;
   }
 }
