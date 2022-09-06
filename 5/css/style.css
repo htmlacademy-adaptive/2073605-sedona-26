@@ -471,7 +471,7 @@
   content: "";
   background-image: url("../img/main-image-element-mobile.svg");
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: -1px;
   width: 322px;
   height: 57px;
@@ -1177,8 +1177,13 @@
   }
 
   .navigation--nojs .navigation__list {
+    display: block;
     position: static;
+    margin: 0;
     margin-top: 95px;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
   }
 }
 @media (min-width: 768px) {
