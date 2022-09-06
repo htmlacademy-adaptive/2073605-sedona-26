@@ -459,6 +459,7 @@
   }
 }
 .main-image {
+  position: relative;
   padding: 52px 43px 66px;
   background-image: url("../img/sedona-mobile.jpg");
   background-repeat: no-repeat;
@@ -466,6 +467,50 @@
   background-position: center;
 }
 
+.main-image::before {
+  content: "";
+  background-image: url("../img/main-image-element-mobile.svg");
+  position: absolute;
+  bottom: 0;
+  left: -1px;
+  width: 322px;
+  height: 57px;
+}
+
+@media (min-width: 768px) {
+  .main-image {
+    background-image: url("../img/sedona-tablet.jpg");
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center;
+  }
+
+  .main-image::before {
+    content: "";
+    background-image: url("../img/main-image-element-tablet.svg");
+    position: absolute;
+    bottom: -1px;
+    width: 769px;
+    height: 57px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-image {
+    background-image: url("../img/sedona-main-desktop.jpg");
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center;
+  }
+
+  .main-image::before {
+    content: "";
+    background-image: url("../img/main-image-element-desktop.svg");
+    position: absolute;
+    bottom: -1px;
+    width: 1201px;
+    height: 57px;
+  }
+}
 .media__list {
   padding: 0;
   list-style-type: none;
@@ -938,8 +983,9 @@
   position: relative;
 }
 
-.client__button {
+.client__contacts::before {
   position: absolute;
+  content: "";
   top: 21px;
   right: 0;
   width: 58px;
@@ -950,11 +996,11 @@
   border: none;
 }
 
-.client__contacts:nth-child(2) .client__button {
+.client__contacts:nth-child(2)::before {
   background-image: url("../img/phone.svg");
 }
 
-.client__contacts:nth-child(3) .client__button {
+.client__contacts:nth-child(3)::before {
   background-image: url("../img/mail.svg");
 }
 
@@ -1063,7 +1109,7 @@
 .navigation__toggle {
   position: absolute;
   right: 0;
-  padding: 17px 20px;
+  padding: 15px 20px;
   background-color: #ffffff;
   border: none;
   cursor: pointer;
@@ -1124,6 +1170,15 @@
 
   .navigation--opened .navigation__toggle::after {
     transform: rotate(-45deg);
+  }
+
+  .navigation--nojs .navigation__toggle {
+    display: none;
+  }
+
+  .navigation--nojs .navigation__list {
+    position: static;
+    margin-top: 95px;
   }
 }
 @media (min-width: 768px) {
