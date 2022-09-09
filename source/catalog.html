@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico" sizes="32x32" type="img/favicons/png">
+  <link rel="icon" href="img/favicons/icon.svg" type="img/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -43,7 +46,11 @@
     <main>
       <div class="main-image">
         <h2 class="visually-hidden">Sedona.</h2>
-        <img class="main-image__image" src="img/sedona.svg" width="229" height="39" alt="Добро пожаловать в Седону.">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/sedona.svg" width="460" height="80">
+          <source media="(min-width: 768px)" srcset="img/sedona.svg" width="457" height="77">
+          <img class="main-image__image" src="img/sedona.svg" width="229" height="39" alt="Добро пожаловать в Седону.">
+        </picture>
       </div>
       <section class="media">
         <div class="media__description summary">
@@ -53,7 +60,12 @@
         </div>
         <ul class="media__list">
           <li class="media__item photo">
-            <img class="photo__card" src="img/space-mobile.jpg" width="280" height="280" alt="Просторы.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/space-desktop.jpg 1x, img/space-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/space-tablet.jpg 1x, img/space-tablet@2x.jpg 2x">
+              <img class="photo__card" src="img/space-mobile.jpg" srcset="img/space-mobile@2x.jpg 2x" width="280"
+                height="280" alt="Просторы.">
+            </picture>
             <div class="photo__info">
               <div class="photo__content">
                 <p class="photo__name">Неродные просторы</p>
@@ -66,7 +78,12 @@
             </div>
           </li>
           <li class="media__item photo">
-            <img class="photo__card" src="img/flora-mobile.jpg" width="280" height="280" alt="Флора.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/flora-desktop.jpg 1x, img/flora-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/flora-tablet.jpg 1x, img/flora-tablet@2x.jpg 2x">
+              <img class="photo__card" src="img/flora-mobile.jpg" srcset="img/flora-mobile@2x.jpg 2x" width="280"
+                height="280" alt="Флора.">
+            </picture>
             <div class="photo__info">
               <div class="photo__content">
                 <p class="photo__name">Местная растительность</p>
@@ -79,7 +96,12 @@
             </div>
           </li>
           <li class="media__item photo">
-            <img class="photo__card" src="img/road-mobile.jpg" width="280" height="280" alt="Дорога.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/road-desktop.jpg 1x, img/road-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/road-tablet.jpg 1x, img/road-tablet@2x.jpg 2x">
+              <img class="photo__card" src="img/road-mobile.jpg" srcset="img/road-mobile@2x.jpg 2x" width="280"
+                height="280" alt="Дорога.">
+            </picture>
             <div class="photo__info">
               <div class="photo__content">
                 <p class="photo__name">Дорога на север</p>
@@ -92,7 +114,12 @@
             </div>
           </li>
           <li class="media__item photo">
-            <img class="photo__card" src="img/bridge-mobile.jpg" width="280" height="280" alt="Мост.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/bridge-desktop.jpg 1x, img/bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/bridge-tablet.jpg 1x, img/bridge-tablet@2x.jpg 2x">
+              <img class="photo__card" src="img/bridge-mobile.jpg" srcset="img/bridge-mobile@2x.jpg 2x" width="280"
+                height="280" alt="Мост.">
+            </picture>
             <div class="photo__info">
               <div class="photo__content">
                 <p class="photo__name">Мост дьявола</p>
@@ -110,7 +137,12 @@
           <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
             очередной
             раз!</p>
-          <img class="video__content" src="img/video.jpg" width="280" height="177" alt="Видео">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="video__content" src="img/video.jpg" srcset="img/video@2x.jpg 2x" width="280" height="177"
+              alt="Видео.">
+          </picture>
         </div>
       </section>
     </main>

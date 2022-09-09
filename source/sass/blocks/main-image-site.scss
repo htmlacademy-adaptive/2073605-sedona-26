@@ -1,10 +1,16 @@
 .main-image-site {
   position: relative;
-  background-image: url("../img/sedona-main-mobile.jpg");
+  background-color: #b6d6d4;
+  background-image: url("../img/sedona-mobile.jpg");
   padding: 85px 19px;
   background-repeat: no-repeat;
   text-align: center;
   background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/sedona-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .main-image-site::before {
@@ -19,10 +25,19 @@
 
 @media (min-width: 768px) {
   .main-image-site {
-    background-image: url("../img/sedona-main-tablet.jpg");
+    padding-top: 79px;
+    padding-bottom: 90px;
+    background-color: #b6d6d4;
+    background-image: url("../img/sedona-main.jpg");
     background-repeat: no-repeat;
     text-align: center;
     background-position: center;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/sedona-main@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 
   .main-image-site::before {
@@ -36,13 +51,6 @@
 }
 
 @media (min-width: 1200px) {
-  .main-image-site {
-    background-image: url("../img/sedona-main-desktop.jpg");
-    background-repeat: no-repeat;
-    text-align: center;
-    background-position: center;
-  }
-
   .main-image-site::before {
     content: "";
     background-image: url("../img/main-image-element-desktop.svg");

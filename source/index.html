@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico" sizes="32x32" type="img/favicons/png">
+  <link rel="icon" href="img/favicons/icon.svg" type="img/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -43,8 +46,11 @@
     <main>
       <div class="main-image-site">
         <h2 class="visually-hidden">Sedona.</h2>
-        <img class="main-image-site__image" src="img/welcome.svg" width="282" height="214"
-          alt="Добро пожаловать в великолепную Седону. Потому что Гранд каньон отстой.">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/welcome-tablet.svg" width="461" height="350">
+          <img class="main-image-site__image" src="img/welcome.svg" width="282" height="214"
+            alt="Добро пожаловать в великолепную Седону. Потому что Гранд каньон отстой.">
+        </picture>
       </div>
       <section class="reasons">
         <div class="reasons__content summary">
@@ -62,9 +68,12 @@
               <p class="reasons__number">— №1 —</p>
               <p class="reasons__text">Седона — не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <div class="reasons__image">
-              <img class="reasons__foto" src="img/town-mobile.jpg" width="320" height="260" alt="Улица Седоны.">
-            </div>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/town-desktop.jpg 1x, img/town-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/town-tablet.jpg 1x, img/town-tablet@2x.jpg 2x">
+              <img class="reasons__photo" src="img/town-mobile.jpg" srcset="img/town-mobile@2x.jpg 2x" width="320"
+                height="260" alt="Улица Седоны.">
+            </picture>
             <ul class="reality">
               <li class="reality__item">
                 <h3 class="reality__title">Жильё</h3>
@@ -86,10 +95,14 @@
               <p class="reasons__number">— №2 —</p>
               <p class="reasons__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <div class="reasons__image">
-              <img class="reasons__foto" src="img/devils-bridge-mobile.jpg" width="320" height="260"
-                alt="Мост дьявола.">
-            </div>
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/devils-bridge-desktop.jpg 1x, img/devils-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/devils-bridge-tablet.jpg 1x, img/devils-bridge-tablet@2x.jpg 2x">
+              <img class="reasons__photo" src="img/devils-bridge-mobile.jpg" srcset="img/devils-bridge-mobile@2x.jpg 2x"
+                width="320" height="260" alt="Мост дьявола.">
+            </picture>
           </li>
           <li class="reasons__item">
             <h2 class="reasons__title">Небольшая площадь</h2>
@@ -116,7 +129,12 @@
         <a class="search-hotel__button search-hotel__button--search" href="#">Найти Гостиницу</a>
       </div>
       <div class="map">
-        <img class="map__image" src="img/map-mobile.png" width="320" height="350" alt="Карта Седоны">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/map-mobile.png 1x, img/map-tablet@2x.png 2x">
+          <img class="map__image" src="img/map-mobile.png" srcset="img/map-mobile@2x.png 2x" width="320" height="350"
+            alt="Карта Седоны.">
+        </picture>
       </div>
     </main>
     <footer class="main-footer">
