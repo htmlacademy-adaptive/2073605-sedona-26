@@ -1,8 +1,10 @@
 .video {
+  padding: 17px 20px 0;
   text-align: center;
 }
 
 .video__title {
+  margin: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -13,8 +15,14 @@
 
 .video__description {
   margin: 0 auto;
+  padding: 37px 10px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.video__content {
+  width: 100%;
+  height: auto;
 }
 
 @media (min-width: 768px) {

@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico" sizes="32x32" type="img/favicons/png">
+  <link rel="icon" href="img/favicons/icon.svg" type="img/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -42,7 +45,11 @@
     <main>
       <div class="main-image">
         <h2 class="visually-hidden">Sedona.</h2>
-        <img class="main-image__image" src="img/sedona.svg" width="229" height="39" alt="Добро пожаловать в Седону.">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/sedona-desktop.svg" width="460" height="80">
+          <source media="(min-width: 768px)" srcset="img/sedona-tablet.svg" width="457" height="77">
+          <img class="main-image__image" src="img/sedona.svg" width="229" height="39" alt="Добро пожаловать в Седону.">
+        </picture>
       </div>
       <div class="form">
         <div class="form__description summary">

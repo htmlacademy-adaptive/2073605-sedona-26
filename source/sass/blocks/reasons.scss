@@ -5,6 +5,10 @@
   list-style-type: none;
 }
 
+.reasons__photo {
+  display: block;
+}
+
 .reasons__title {
   margin: 0;
   font-weight: 700;
@@ -33,7 +37,7 @@
 
 .reasons__item:nth-child(1) .reasons__wrapper {
   position: relative;
-  padding: 54px 16px 34px;
+  padding: 54px 16px 40px;
 }
 
 .reasons__item:nth-child(2) .reasons__wrapper {
@@ -102,7 +106,7 @@
     display: none;
   }
 
-  .reasons__image {
+  .reasons__photo {
     width: 512px;
   }
 
@@ -146,7 +150,7 @@
     box-sizing: border-box;
   }
 
-  .reasons__image {
+  .reasons__photo {
     width: 800px;
   }
 
