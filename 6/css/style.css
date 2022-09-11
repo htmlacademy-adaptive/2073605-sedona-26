@@ -144,6 +144,10 @@
   list-style-type: none;
 }
 
+.reasons__photo {
+  display: block;
+}
+
 .reasons__title {
   margin: 0;
   font-weight: 700;
@@ -1267,5 +1271,9 @@
 }
 .map {
   text-align: center;
+}
+
+.map__image {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
