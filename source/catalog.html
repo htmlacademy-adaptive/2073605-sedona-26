@@ -46,11 +46,9 @@
     <main>
       <div class="main-image">
         <h2 class="visually-hidden">Sedona.</h2>
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/sedona.svg" width="460" height="80">
-          <source media="(min-width: 768px)" srcset="img/sedona.svg" width="457" height="77">
-          <img class="main-image__image" src="img/sedona.svg" width="229" height="39" alt="Добро пожаловать в Седону.">
-        </picture>
+        <svg class="sedona" width="229" height="39">
+          <use xlink:href="img/sprite.svg#sedona"></use>
+        </svg>
       </div>
       <section class="media">
         <div class="media__description summary">
