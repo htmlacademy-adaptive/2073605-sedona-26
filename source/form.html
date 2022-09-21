@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HTML Academy: Седона</title>
-  <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="img/favicons/icon.svg" type="img/svg+xml">
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="img/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="/css/style.min.css" as="style">
+    <link rel="preload" href="/js/script.min.js" as="script">
+    <link rel="preload" href="/fonts/psans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/psansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
 
 <body class="page-site">
   <div class="page-wrapper">
@@ -34,7 +38,7 @@
               <a class="navigation__link" href="catalog.html">Фото и видео</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="form.html">Форма Отзыва</a>
+              <a class="navigation__link navigation__link--current" href="form.html">Форма Отзыва</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="https://htmlacademy.ru/">HTML ACADEMY</a>
@@ -63,7 +67,7 @@
             <p class="client__box">
               <label class="client__name" for="client-name">Имя*:</label>
               <input class="client__field" type="text" id="client-name" name="client-name" required
-                placeholder="Укажите имя" value="Петр">
+                placeholder="Укажите имя" value="Пётр">
             </p>
             <p class="client__box">
               <label class="client__name" for="client-surname">Фамилия*:</label>
@@ -209,7 +213,7 @@
       </div>
     </div>
   </div>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

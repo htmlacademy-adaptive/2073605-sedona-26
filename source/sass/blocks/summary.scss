@@ -1,8 +1,6 @@
-.summary {
-  padding: 32px 18px 16px;
-}
-
 .summary__title {
+  margin: 0;
+  margin-bottom: 36px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -12,22 +10,14 @@
 }
 
 .summary__description {
+  margin: 0;
   text-align: center;
   text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
-  .summary {
-    padding: 47px 18px 55px;
-  }
-
   .summary__title {
     font-size: 21px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .summary {
-    padding: 59px 18px 44px;
+    margin-bottom: 31px;
   }
 }

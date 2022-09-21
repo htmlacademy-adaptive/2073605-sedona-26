@@ -5,9 +5,9 @@
 }
 
 .reality__item {
-  padding: 23px 15px 22px 65px;
+  padding: 31px 15px 0 66px;
   background-repeat: no-repeat;
-  background-position: 15px 15px;
+  background-position: 17px 22px;
 }
 
 .reality__item:nth-child(1) {
@@ -19,11 +19,13 @@
 }
 
 .reality__item:nth-child(3) {
+  padding-bottom: 49px;
   background-image: url("../img/icon-souvenir.svg");
 }
 
 .reality__title {
   margin: 0;
+  margin-bottom: 16px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -45,12 +47,23 @@
 
   .reality__item {
     width: 256px;
-    padding: 158px 36px 58px;
+    padding: 158px 31px 58px;
     box-sizing: border-box;
-    background-position: 105px 70px;
+    background-position: 89px 57px;
+    background-size: 75px 74px;
   }
 
-  .reality__title,
+  .reality__item:nth-child(2) {
+    padding: 158px 50px 58px;
+  }
+
+  .reality__title {
+    font-size: 21px;
+    line-height: 21px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
   .reality__text {
     text-align: center;
   }
@@ -60,7 +73,6 @@
   .reality__item {
     width: 400px;
     padding: 159px 58px 79px;
-    box-sizing: border-box;
-    background-position: 180px 70px;
+    background-position: 161px 56px;
   }
 }
