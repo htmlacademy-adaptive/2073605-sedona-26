@@ -8,6 +8,10 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="img/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="/css/style.min.css" as="style">
+  <link rel="preload" href="/js/script.min.js" as="script">
+  <link rel="preload" href="/fonts/psans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/psansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -28,7 +32,7 @@
         <div class="navigation__wrapper">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link" href="index.html">Главная</a>
+              <a class="navigation__link navigation__link--current" href="index.html">Главная</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="catalog.html">Фото и видео</a>
@@ -64,7 +68,7 @@
             <div class="reasons__wrapper">
               <h2 class="reasons__title reasons__title--other">Настоящий городок</h2>
               <p class="reasons__number">— №1 —</p>
-              <p class="reasons__text">Седона — не аттракцион для туристов, там течет своя жизнь</p>
+              <p class="reasons__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <picture>
               <source media="(min-width: 1200px)" srcset="img/town-desktop.jpg 1x, img/town-desktop@2x.jpg 2x">
@@ -124,7 +128,7 @@
         <p class="search-hotel__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие
           предложения
           гостиниц в седоне</p>
-        <a class="search-hotel__button search-hotel__button--search" href="#">Найти Гостиницу</a>
+        <a class="search-hotel__button" href="#">Найти Гостиницу</a>
       </div>
       <div class="map">
         <picture>
@@ -132,7 +136,7 @@
             srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)"
             srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/map-phone.webp 1x, img/map-phone@2x.webp 2x">
+          <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
           <source media="(min-width: 1200px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
           <img class="map__image" src="img/map-mobile.png" srcset="img/map-mobile@2x.png 2x" width="320" height="350"

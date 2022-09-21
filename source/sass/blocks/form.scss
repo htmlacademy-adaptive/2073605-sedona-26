@@ -1,12 +1,18 @@
 .form__group {
   margin: 0;
-  padding: 16px 20px;
+  padding: 16px 20px 8px;
   border: none;
   border-bottom: 1px solid #e5e5e5;
 }
 
+.form__description {
+  padding-top: 37px;
+  padding-bottom: 29px;
+}
+
 .form__title {
   margin: 0;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -15,8 +21,13 @@
   color: #000000;
 }
 
+.form__description p:nth-child(1) {
+  margin-bottom: 23px;
+}
+
 .form__group .form__title {
-  padding-top: 16px;
+  margin: 0;
+  padding-top: 23px;
 }
 
 .form__list {
@@ -25,7 +36,7 @@
 }
 
 .form__wrapper {
-  padding: 24px 20px 39px;
+  padding: 24px 20px 24px;
   border-top: 1px solid #e5e5e5;
 }
 
@@ -34,9 +45,10 @@
 }
 
 .form__commit {
-  margin-top: 16px;
-  margin-bottom: 16px;
-  padding: 16px;
+  margin: 0;
+  margin-bottom: 57px;
+  padding: 15px;
+  padding-bottom: 26px;
   width: 279px;
   font-weight: 700;
   font-size: 18px;
@@ -48,6 +60,7 @@
 }
 
 .form__footnote {
+  margin: 0;
   font-size: 12px;
   line-height: 21px;
   text-align: end;
@@ -69,10 +82,24 @@
 }
 
 .form__container {
-  padding: 16px 19px 0;
+  padding: 24px 19px 0;
+}
+
+.form__container .form__title {
+  margin: 0 auto;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
+  .form__description {
+    padding: 63px 163px 108px;
+  }
+
+  .form__description p:nth-child(1) {
+    font-size: 30px;
+    line-height: 26px;
+  }
+
   .form__name {
     display: flex;
     flex-wrap: wrap;
@@ -81,29 +108,31 @@
   }
 
   .form__wrapper {
+    margin-bottom: 48px;
     padding: 0;
-    width: 280px;
+    width: 324px;
+    box-sizing: border-box;
     border: none;
   }
 
   .form__wrapper:nth-child(1) {
     padding-right: 43px;
-    padding-bottom: 63px;
     border-right: 1px solid #dbdbdb;
   }
 
   .form__wrapper:nth-child(2) {
-    padding-left: 26px;
+    padding-left: 9px;
     border: none;
   }
 
   .form__list {
+    padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 16px;
   }
 
   .form__group {
+    padding: 16px 20px 38px;
     width: 648px;
     border: none;
     border-top: 1px solid #dbdbdb;
@@ -113,6 +142,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+    padding: 0 19px 68px;
     width: 648px;
     justify-content: space-between;
   }
@@ -120,40 +150,81 @@
   .form__title {
     margin: 0 auto;
     margin-bottom: 28px;
-    width: 402px;
+    width: 395px;
+    text-align: start;
     font-size: 21px;
     line-height: 26px;
   }
 
+  .form__wrapper:nth-child(1) .form__title {
+    padding-left: 81px;
+  }
+
+  .form__wrapper:nth-child(2) .form__title {
+    padding-left: 16px;
+  }
+
+  .form__group .form__title {
+    text-align: center;
+    padding-top: 0;
+  }
+
   .form__commit {
     width: 648px;
-    margin: 28px 0 48px;
+    margin: 28px 0 42px;
+    padding: 15px 15px 44px;
   }
 
   .form__button {
     width: 324px;
   }
 
+  .form__button:hover {
+    background-color: #669ec0;
+  }
+
+  .form__button:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  .form__button:disabled {
+    background-color: #e5e5e5;
+  }
+
   .form__footnote {
+    padding-top: 23px;
     font-size: 14px;
     line-height: 21px;
   }
 }
 
 @media (min-width: 1200px) {
+  .form__description {
+    padding: 113px 378px 67px;
+  }
+
+  .form__description p:nth-child(1) {
+    margin-bottom: 33px;
+  }
+
   .form__name {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     padding: 0 120px;
   }
 
+  .form__wrapper {
+    margin-bottom: 58px;
+  }
+
   .form__wrapper:nth-child(1) {
-    width: 430px;
+    width: 494px;
   }
 
   .form__wrapper:nth-child(2) {
-    width: 402px;
+    width: 444px;
   }
 
   .form__list:nth-child(1),
@@ -161,15 +232,25 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    width: 960px;
+    width: 840px;
     justify-content: space-between;
   }
 
+  .form__wrapper:nth-child(1) .form__title {
+    padding-left: 166px;
+  }
+
+  .form__wrapper:nth-child(2) .form__title {
+    padding-left: 62px;
+  }
+
   .form__group {
+    padding: 16px 20px 65px;
     width: 960px;
   }
 
   .form__container {
+    margin-top: 22px;
     display: flex;
     flex-wrap: wrap;
     width: 768px;

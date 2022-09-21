@@ -1,11 +1,12 @@
 .photo {
-  padding: 24px 20px;
+  padding: 26px 20px 24px;
   border-top: 1px solid #e5e5e5;
 }
 
 .photo__card {
   display: block;
   width: 100%;
+  height: auto;
 }
 
 .photo:nth-last-child(1) {
@@ -31,8 +32,8 @@
 }
 
 .photo__button {
-  width: 32px;
-  height: 32px;
+  width: 25px;
+  height: 26px;
   background-color: transparent;
   background-image: url("../img/like.svg");
   background-repeat: no-repeat;
@@ -57,6 +58,11 @@
     border: none;
   }
 
+  .photo__content {
+    margin-top: 22px;
+    margin-bottom: 16px;
+  }
+
   .photo:nth-last-child(1) {
     border: none;
   }
@@ -69,6 +75,10 @@
     padding-right: 20px;
     background-color: #f2f2f2;
     box-sizing: border-box;
+  }
+
+  .photo__result {
+    margin-left: 8px;
   }
 }
 

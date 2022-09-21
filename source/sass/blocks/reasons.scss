@@ -1,3 +1,7 @@
+.reasons__content {
+  padding: 33px 25px 22px;
+}
+
 .reasons__list {
   margin: 0;
   padding: 0;
@@ -20,8 +24,11 @@
 }
 
 .reasons__number {
+  margin: 0;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .reasons__text {
@@ -37,7 +44,7 @@
 
 .reasons__item:nth-child(1) .reasons__wrapper {
   position: relative;
-  padding: 54px 16px 40px;
+  padding: 64px 16px 38px;
 }
 
 .reasons__item:nth-child(2) .reasons__wrapper {
@@ -49,7 +56,7 @@
   content: "";
   background-image: url("../img/reasons-element.svg");
   position: absolute;
-  top: 0;
+  top: -6px;
   left: 0;
   width: 320px;
   height: 37px;
@@ -60,7 +67,7 @@
 }
 
 .reasons__item:nth-child(n+3) {
-  padding: 25px 32px;
+  padding: 25px 32px 22px;
   box-sizing: border-box;
 }
 
@@ -79,6 +86,10 @@
 }
 
 @media (min-width: 768px) {
+  .reasons__content {
+    padding: 47px 18px 55px;
+  }
+
   .reasons__list {
     display: flex;
     flex-wrap: wrap;
@@ -95,7 +106,7 @@
   }
 
   .reasons__item:nth-child(1) .reasons__wrapper {
-    padding: 40px 26px 43px;
+    padding: 43px 26px 43px;
   }
 
   .reasons__item:nth-child(2) .reasons__image {
@@ -113,6 +124,10 @@
   .reasons__title {
     font-size: 21px;
     line-height: 26px;
+  }
+
+  .reasons__item:nth-child(2) .reasons__title {
+    padding: 0 17px;
   }
 
   .reasons__item--other {
@@ -136,16 +151,33 @@
   .reasons__item:nth-child(n+4)::before {
     display: none;
   }
+
+  .reasons__number {
+    margin-top: 12px;
+    margin-bottom: 24px;
+  }
 }
 
 @media (min-width: 1200px) {
+  .reasons__content {
+    padding: 59px 18px 44px;
+  }
+
   .reasons__list {
     display: flex;
     flex-wrap: wrap;
   }
 
+  .reasons__item:nth-child(2) .reasons__wrapper {
+    padding: 51px 83px 40px;
+  }
+
+  .reasons__item:nth-child(1) .reasons__wrapper {
+    padding: 48px 56px 43px;
+  }
+
   .reasons__wrapper {
-    padding: 47px 52px 56px;
+    padding: 48px 55px 56px;
     width: 400px;
     box-sizing: border-box;
   }
@@ -161,10 +193,24 @@
 
   .reasons__item:nth-child(n+3) {
     width: 400px;
+    padding: 39px 41px 64px;
   }
 
   .reasons__item:nth-child(n+4) {
     padding-left: 62px;
     padding-right: 62px;
+  }
+
+  .reasons__title {
+    padding: 0 73px;
+  }
+
+  .reasons__item:nth-child(2) .reasons__title {
+    padding: 0 42px;
+  }
+
+  .reasons__number {
+    margin-top: 12px;
+    margin-bottom: 24px;
   }
 }

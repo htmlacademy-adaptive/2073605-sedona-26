@@ -1,6 +1,6 @@
 .main-image {
   position: relative;
-  padding: 52px 43px 66px;
+  padding: 52px 43px 61px;
   background-color: #b6d6d4;
   background-image: url("../img/sedona-mobile.jpg");
   background-repeat: no-repeat;
@@ -26,7 +26,7 @@
 @media (min-width: 768px) {
   .main-image {
     padding-top: 95px;
-    padding-bottom: 117px;
+    padding-bottom: 111px;
     background-color: #b6d6d4;
     background-image: url("../img/sedona-main.jpg");
     background-repeat: no-repeat;
@@ -50,6 +50,10 @@
 }
 
 @media (min-width: 1200px) {
+  .main-image {
+    padding-bottom: 122px;
+  }
+
   .main-image::before {
     content: "";
     background-image: url("../img/main-image-element-desktop.svg");

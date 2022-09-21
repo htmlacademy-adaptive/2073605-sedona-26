@@ -15,7 +15,7 @@
 
 .video__description {
   margin: 0 auto;
-  padding: 37px 10px;
+  padding: 32px 10px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -37,16 +37,16 @@
 
   .video__description {
     width: 445px;
-    margin-bottom: 65px;
+    margin-bottom: 56px;
   }
 }
 
 @media (min-width: 1200px) {
   .video {
-    padding: 66px 200px 120px;
+    padding: 61px 200px 83px;
   }
 
   .video__description {
-    margin-bottom: 68px;
+    margin-bottom: 54px;
   }
 }

@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HTML Academy: Седона</title>
-  <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="img/favicons/icon.svg" type="img/svg+xml">
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="img/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="/css/style.min.css" as="style">
+    <link rel="preload" href="/js/script.min.js" as="script">
+    <link rel="preload" href="/fonts/psans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/psansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
 
 <body class="page-site">
   <div class="page-wrapper">
@@ -31,7 +35,7 @@
               <a class="navigation__link" href="index.html">Главная</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="catalog.html">Фото и видео</a>
+              <a class="navigation__link navigation__link--current" href="catalog.html">Фото и видео</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="form.html">Форма Отзыва</a>
@@ -63,7 +67,7 @@
                 srcset="img/space-desktop.webp 1x, img/space-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
                 srcset="img/space-tablet.webp 1x, img/space-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/space-phone.webp 1x, img/space-phone@2x.webp 2x">
+              <source type="image/webp" srcset="img/space-mobile.webp 1x, img/space-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/space-desktop.jpg 1x, img/space-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/space-tablet.jpg 1x, img/space-tablet@2x.jpg 2x">
               <img class="photo__card" src="img/space-mobile.jpg" srcset="img/space-mobile@2x.jpg 2x" width="280"
@@ -185,7 +189,7 @@
       </a>
     </footer>
   </div>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

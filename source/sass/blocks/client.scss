@@ -1,4 +1,5 @@
 .client__name {
+  padding-left: 14px;
   text-transform: uppercase;
 }
 
@@ -53,6 +54,8 @@
 .client__contacts {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 @media (min-width: 768px) {
@@ -63,6 +66,14 @@
     width: 280px;
     box-sizing: border-box;
   }
+
+  .client__contacts {
+    padding-left: 33px;
+  }
+
+  .client__contacts::before {
+    right: -34px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -71,5 +82,10 @@
     display: flex;
     flex-direction: column;
     width: 430px;
+  }
+
+
+  .client__contacts::before {
+    right: -3px;
   }
 }
